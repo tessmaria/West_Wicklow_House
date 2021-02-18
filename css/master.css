@@ -1,0 +1,42 @@
+body {
+	background-color: #f2efe1;
+}
+
+/* CSS for the navbar and intro / header sections */
+
+#logo {
+	display: block;
+	margin: 0.5% auto 0.5% auto;
+	width: 12%;
+}
+
+#logo_mobile {
+	width: 40%;
+	margin-top: 4%;
+}
+
+#logo_tablet {
+	width: 50%;
+	margin-top: 4%;
+}
+
+.central {
+	display:flex; 
+	justify-content:center;
+}
+
+nav {
+	border: 2px solid #009688;
+	margin-top: 0.5%;
+}
+
+li {
+	margin: 0 2% 0 2%;
+}
+
+#banner {
+	width: 100%;
+	margin-top: 0.5%;
+}
+
+

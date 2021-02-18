@@ -18,29 +18,47 @@
 	
 	<body>
 		
+		<div class = "container">
+			<img src = "images/logo_white.png" alt = "logo of West Wicklow House Blessington" class = "hide-on-med-and-down" id = "logo" />
+		</div>
 		
-		<nav>
-			<div class="nav-wrapper">
-			  <a href="#!" class="brand-logo">Logo</a>
-			  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-			  <ul class="right hide-on-med-and-down">
-				<li><a href="sass.html">Sass</a></li>
-				<li><a href="badges.html">Components</a></li>
-				<li><a href="collapsible.html">Javascript</a></li>
-				<li><a href="mobile.html">Mobile</a></li>
-			  </ul>
-			</div>
-		  </nav>
-
-		  <ul class="sidenav" id="mobile-demo">
-			<li><a href="sass.html">Sass</a></li>
-			<li><a href="badges.html">Components</a></li>
-			<li><a href="collapsible.html">Javascript</a></li>
-			<li><a href="mobile.html">Mobile</a></li>
-		  </ul>
+		<div id = "nav_section">
+			<nav class = "transparent z-depth-0">
+				<div class="nav-wrapper">
+				
+				<!-- logo for mobile -->
+				  <a href="#!" class="brand-logo center"> <img src = "images/logo_white.png" alt = "logo of West Wicklow House Blessington" id = "logo_mobile" class = "hide-on-large-only" /> </a>
 				  
+				  <!-- logo for tablet -->
+				  <a href="#!" class="brand-logo center"> <img src = "images/logo_white.png" alt = "logo of West Wicklow House Blessington" id = "logo_tablet" class = "hide-on-large-only hide-on-small-only" /> </a>
+				  
+				  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons teal-text">menu</i></a>
+				  <ul class="hide-on-med-and-down central">
+					<li><a href="sass.html"  class = "teal-text"> Home </a></li>
+					<li><a href="badges.html" class = "teal-text"> Menu </a></li>
+					<li><a href="collapsible.html" class = "teal-text"> Gallery </a></li>
+					<li><a href="mobile.html" class = "teal-text"> Events </a></li>
+					<li><a href="mobile.html" class = "teal-text"> Reviews </a></li>
+					<li><a href="mobile.html" class = "teal-text"> Contact </a></li>
+				  </ul>
+				</div>
+			  </nav>
+
+			  <ul class="sidenav" id="mobile-demo">
+				<li><a href="sass.html" class = "teal-text"> Home </a></li>
+				<li><a href="badges.html" class = "teal-text"> Menu </a></li>
+				<li><a href="collapsible.html" class = "teal-text"> Gallery </a></li>
+				<li><a href="mobile.html" class = "teal-text"> Events </a></li>
+				<li><a href="mobile.html" class = "teal-text"> Reviews </a></li>
+				<li><a href="mobile.html" class = "teal-text"> Contact </a></li>
+			  </ul>
+		</div>
 		
+		<div id = "banner">
+			<img src = "images/cover_photo.jpg" alt = "Photo of inside of West Wicklow House Blessington" id = "banner" />
+		</div>
 		
+				  
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src = "js/my_script.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
