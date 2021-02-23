@@ -2,6 +2,10 @@ body {
 	background-color: #f2efe1;
 }
 
+h2 {
+	text-decoration: underline;
+}
+
 /* CSS for the navbar and intro / header sections */
 
 #logo {
@@ -30,6 +34,10 @@ nav {
 	margin-top: 0.5%;
 }
 
+.nav-text {
+	font-size: 120%;
+}
+
 li {
 	margin: 0 2% 0 2%;
 }
@@ -38,5 +46,33 @@ li {
 	width: 100%;
 	margin-top: 0.5%;
 }
+
+/* CSS for the About Us Section */
+.about_text {
+	text-align: center;
+	font-size: 120%;
+	margin-bottom: 2%;
+	line-height: 130%;
+}
+
+.food_info {
+	text-align: center;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.row {
+	width: 80%;
+}
+
+.about_icon {
+	font-size: 50px !important;
+}
+
+.icon_container {
+	width: 50px;
+	margin: 15% auto 0 auto;
+}
+
 
 
