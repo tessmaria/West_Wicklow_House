@@ -1,3 +1,5 @@
+/* code to initialise the mobile side nav */
+
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, options);
@@ -7,4 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   $(document).ready(function(){
     $('.sidenav').sidenav();
+  });
+  
+ 
+/* Code to initialize tabs in menu section */
+
+$(document).ready(function(){
+    $('.tabs').tabs();
   });

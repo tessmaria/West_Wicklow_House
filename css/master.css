@@ -66,13 +66,36 @@ li {
 }
 
 .about_icon {
-	font-size: 50px !important;
+	font-size: 40px !important;
 }
 
 .icon_container {
-	width: 50px;
+	width: 40px;
 	margin: 15% auto 0 auto;
 }
 
 
+/* CSS for the food menus sections */
+
+#menu_header {
+	background-image: url(../images/menu_section.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 200px;
+}
+
+#menu_header_text {
+	margin: auto;
+}
+
+#menu_nav {
+	margin-top: 2%;
+}
+
+.tabs .indicator {
+	background-color: #009688 !important;
+}
+.tabs .tab a.active {
+    background-color:#cae1db !important;
+} 
 
