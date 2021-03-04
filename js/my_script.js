@@ -1,12 +1,5 @@
 /* code to initialise the mobile side nav */
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
-
-  // Or with jQuery
-
   $(document).ready(function(){
     $('.sidenav').sidenav();
   });
@@ -16,4 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 $(document).ready(function(){
     $('.tabs').tabs();
+  });
+  
+ 
+ /* Code to initialise parallax on header image */
+ $(document).ready(function(){
+    $('.parallax').parallax();
   });

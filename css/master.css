@@ -2,8 +2,21 @@ body {
 	background-color: #f2efe1;
 }
 
-h2 {
+.underline {
 	text-decoration: underline;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.text_padding {
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+}
+
+p {
+	line-height: 120%;
 }
 
 /* CSS for the navbar and intro / header sections */
@@ -55,22 +68,23 @@ li {
 	line-height: 130%;
 }
 
-.food_info {
+.food_time_info {
 	text-align: center;
 	font-size: 110%;
 	font-weight: bold;
 }
 
-.row {
+#icon_row {
 	width: 80%;
+	margin-bottom: 3%;
 }
 
 .about_icon {
-	font-size: 40px !important;
+	font-size: 35px !important;
 }
 
 .icon_container {
-	width: 40px;
+	width: 35px;
 	margin: 15% auto 0 auto;
 }
 
@@ -90,6 +104,7 @@ li {
 
 #menu_nav {
 	margin-top: 2%;
+	width: 100%;
 }
 
 .tabs .indicator {
@@ -97,5 +112,109 @@ li {
 }
 .tabs .tab a.active {
     background-color:#cae1db !important;
-} 
+}
 
+.menu_heading {
+	margin-top: 2%;
+}
+
+.add_border {
+	border: 2px solid #009688;
+}
+
+.food_names {
+	padding-top: 3%;
+	padding-bottom: 1%;
+}
+
+.description {
+	padding-bottom: 4%;
+}
+
+.left-aligned {
+	width: 66%;
+	float: left;
+	margin-top: 3%;
+}
+
+#mains {
+	width: 33%;
+	float: right;
+	margin-top: 3%;
+}
+
+#fish {
+	width: 32%;
+}
+
+#salad {
+	width: 32%;
+	margin-left: 2%;
+}
+
+#burger {
+	margin-right: 10%;
+}
+
+.padding_fix_large {
+	padding-bottom: 4%;
+}
+
+.extra_padding {
+	padding: 3%;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+	.left-aligned {
+		width: 49%;
+	}
+	
+	#mains {
+		width: 49%;
+	}
+	
+	#fish {
+		width: 49%;
+	}
+	
+	#salad {
+		width: 49%;
+	}
+	
+	.padding_fix_med {
+	padding-bottom: 12%;
+	}
+	
+	.extra_padding_med {
+		padding: 3%;
+	}
+	
+	.padding_fix_med_salad {
+		padding-bottom: 10%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#menu_header {
+		height: 150px;
+	}
+	
+  .left-aligned {
+	  width: 100%;
+	  margin-top: 3%;
+  }
+  
+  #mains {
+	  width: 100%;
+  }
+  
+  #fish {
+	  width: 100%;
+  }
+  
+  #salad {
+	  width: 100%;
+	  margin-left: 0%;
+  }
+  
+}
