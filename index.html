@@ -8,6 +8,8 @@
 		<link type = "text/css" rel = "stylesheet" href = "css/master.css" >
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet"> 
 		
 		<meta charset="UTF-8">
 		<meta name="description" content="">
@@ -17,356 +19,142 @@
 	</head>
 	
 	<body>
-		
 		<div class = "container">
-			<img src = "images/logo_white.png" alt = "logo of West Wicklow House Blessington" class = "hide-on-med-and-down" id = "logo" />
-		</div>
-		
-		<div id = "nav_section">
-			<nav class = "transparent z-depth-0">
-				<div class="nav-wrapper">
-				
-				<!-- logo for mobile -->
-				  <a href="#!" class="brand-logo center"> <img src = "images/logo_white.png" alt = "logo of West Wicklow House Blessington" id = "logo_mobile" class = "hide-on-large-only" /> </a>
-				  
-				  <!-- logo for tablet -->
-				  <a href="#!" class="brand-logo center"> <img src = "images/logo_white.png" alt = "logo of West Wicklow House Blessington" id = "logo_tablet" class = "hide-on-large-only hide-on-small-only" /> </a>
-				  
-				  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons teal-text">menu</i></a>
-				  <ul class="hide-on-med-and-down central">
-					<li><a href="sass.html"  class = "teal-text text-darken-1 nav-text"> Home </a></li>
-					<li><a href="#menu_section" class = "teal-text text-darken-1 nav-text"> Menu </a></li>
-					<li><a href="collapsible.html" class = "teal-text text-darken-1 nav-text"> Gallery </a></li>
-					<li><a href="mobile.html" class = "teal-text text-darken-1 nav-text"> Events </a></li>
-					<li><a href="mobile.html" class = "teal-text text-darken-1 nav-text"> Reviews </a></li>
-					<li><a href="mobile.html" class = "teal-text text-darken-1 nav-text"> Contact </a></li>
-				  </ul>
-				</div>
-			  </nav>
+			<div id = "nav_section">
+				<nav class = "transparent z-depth-0">
+					<div class="nav-wrapper">
+					
+					<!-- logo for mobile -->
+					  <a href="#!" class="brand-logo center"> <img src = "images/logo_white.png" alt = "logo of West Wicklow House Blessington" id = "logo_mobile" class = "hide-on-large-only" /> </a>
+					  
+					  <!-- logo for tablet -->
+					  <a href="#!" class="brand-logo center"> <img src = "images/logo_white.png" alt = "logo of West Wicklow House Blessington" id = "logo_tablet" class = "hide-on-large-only hide-on-small-only" /> </a>
+					  
+					  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons teal-text">menu</i></a>
+					  <ul class="hide-on-med-and-down central">
+						<li><a href="index.html"  class = "teal-text text-darken-1 nav-text"> Home </a></li>
+						<li><a href="menu.html" class = "teal-text text-darken-1 nav-text"> Menu </a></li>
+						<li><a href="gallery.html" class = "teal-text text-darken-1 nav-text"> Gallery </a></li>
+						<li><a href="collapsible.html" class = "teal-text text-darken-1 nav-text"> <img src = "images/logo_white.png" alt = "logo of West Wicklow House Blessington" id = "logo" /> </a></li>
+						<li><a href="events.html" class = "teal-text text-darken-1 nav-text"> Events </a></li>
+						<li><a href="reviews.html" class = "teal-text text-darken-1 nav-text"> Reviews </a></li>
+						<li><a href="contact.html" class = "teal-text text-darken-1 nav-text"> Contact </a></li>
+					  </ul>
+					</div>
+				  </nav>
 
-			  <ul class="sidenav" id="mobile-demo">
-				<li><a href="sass.html" class = "teal-text text-darken-1"> Home </a></li>
-				<li><a href="#menu_section" class = "teal-text text-darken-1"> Menu </a></li>
-				<li><a href="collapsible.html" class = "teal-text text-darken-1"> Gallery </a></li>
-				<li><a href="mobile.html" class = "teal-text text-darken-1"> Events </a></li>
-				<li><a href="mobile.html" class = "teal-text text-darken-1"> Reviews </a></li>
-				<li><a href="mobile.html" class = "teal-text text-darken-1"> Contact </a></li>
-			  </ul>
+				  <ul class="sidenav" id="mobile-demo">
+					<li><a href="index.html" class = "teal-text text-darken-1"> Home </a></li>
+					<li><a href="menu.html" class = "teal-text text-darken-1"> Menu </a></li>
+					<li><a href="gallery.html" class = "teal-text text-darken-1"> Gallery </a></li>
+					<li><a href="events.html" class = "teal-text text-darken-1"> Events </a></li>
+					<li><a href="reviews.html" class = "teal-text text-darken-1"> Reviews </a></li>
+					<li><a href="contact.html" class = "teal-text text-darken-1"> Contact </a></li>
+				  </ul>
+			</div>
 		</div>
 		
-		<div>
-			<img src = "images/cover_photo.jpg" alt = "Photo of inside of West Wicklow House Blessington" id = "banner" />
+		<div id = "about_banner" class = "valign-wrapper">
+			<div id = "about_insert">
+				<img src = "images/about_overlay.png" id = "about_overlay"/>
+			</div>
 		</div>
 		
 		
 		<!-- About Us Section -->
 		<div class = "container">
-			<h2 class = "center teal-text text-darken-1 flow-text underline"> About Us </h2>
-			<p class = "about_text blue-grey-text text-darken-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-			<p class = "about_text blue-grey-text text-darken-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-			<p class = "about_text teal-text text-darken-1 food_time_info"> FOOD SERVED DAILY </p>
-			<p class = "about_text teal-text text-darken-1 food_time_info"> 12PM - 8.30PM (MON - SAT) </p>
-			<p class = "about_text teal-text text-darken-1 food_time_info"> 12.30PM - 7.30PM (SUN) </p>
-			
-			<div class = "row" id = "icon_row">
-				<div class = "col s6 m4 l2">
-					<div class = "icon_container">
-						<i class = "small material-icons teal-text about_icon"> restaurant </i>
-					</div>
-					<p class = "center blue-grey-text text-darken-2"> Beer Garden </p>
+			<div class = "row margin-top-5">
+				<div class = "col s12 m5 l7">
+					<img src = "images/about.jpg" class = "fill_width add_grey_border"/>
 				</div>
-				
-				<div class = "col s6 m4 l2">
-					<div class = "icon_container">
-						<i class = "small material-icons teal-text about_icon"> local_parking </i>
-					</div>
-					<p class = "center blue-grey-text text-darken-2"> Parking Area </p>
-				</div>
-				
-				<div class = "col s6 m4 l2">
-					<div class = "icon_container">
-						<i class = "small material-icons teal-text about_icon"> directions_bike </i>
-					</div>
-					<p class = "center blue-grey-text text-darken-2"> Bike Stop Zone </p>
-				</div>
-				
-				<div class = "col s6 m4	l2">
-					<div class = "icon_container">
-						<i class = "small material-icons teal-text about_icon"> music_note </i>
-					</div>
-					<p class = "center blue-grey-text text-darken-2"> Live Music </p>
-				</div>
-				
-				<div class = "col s6 m4	l2">
-					<div class = "icon_container">
-						<i class = "small material-icons teal-text about_icon"> event </i>
-					</div>
-					<p class = "center blue-grey-text text-darken-2"> Home Catering </p>
-				</div>
-				
-				<div class = "col s6 m4	l2">
-					<div class = "icon_container">
-						<i class = "small material-icons teal-text about_icon"> accessible </i>
-					</div>
-					<p class = "center blue-grey-text text-darken-2"> Wheelchair Accessible </p>
+				<div class = "col s12 m7 l5 margin-top-3">
+					<p class = "bold flow-text"> OUR STORY</p>
+					<h2 class = "teal-text"> About Us </h2>
+					<p class = "about_text flow-text"> The West Wicklow House is a traditional Irish pub located in the heart of Co. Wicklow, Ireland. Originally built as a couch house to shelter travellers overnight, The West Wicklow House is now a busy, vibrant restaurant pub serving quality food. Boasting a fantastic interior, large outdoor area and fantastic staff, The West Wicklow House is a great choice to welcome families, cyclists and anyone else.  </p>
+					<p class = "about_text flow-text"> With so many nearby treasures including Blessington Lakes and Greenway, Russborough House, Glendalough and the Wicklow Mountains (to name only a few!) The West Wicklow House is the perfect spot to stop for a delicious meal and a drink. </p>
+
 				</div>
 			</div>
 		</div>
 		
-		
-		<!-- Menu Section -->
-		<div id = "menu_section">
-			<div id = "menu_header"  class = "valign-wrapper">
-				<h2 class = "white-text underline" id = "menu_header_text"> Food Menus </h2>
+		<div class = "row margin-top-5">
+			<div class = "col s12 m4 l5">
+				<img src = "images/fork.png" class = "fork fill_width"/>
+			</div>
+			<div class = "col s12 m4 l2">
+				<p class = "teal-text text-darken-1 food_time_info"> FOOD SERVED DAILY </p>
+				<p class = "teal-text text-darken-1 food_time_info"> 12pm - 8.30pm (Mon - Sat) </p>
+				<p class = "teal-text text-darken-1 food_time_info"> 12.30pm - 7.30pm (Sun) </p>
+			</div>
+			<div class = "col s12 m4 l5">
+				<img src = "images/knife.png" class = "knife fill_width" />
 			</div>
 		</div>
 		
-		
-		<div class = "container">
-			<div class="row" id = "menu_nav">
-				<div class="col s12">
-				  <ul class="tabs transparent tabs-fixed-width">
-					<li class="tab col s3"><a href="#test3" class = "teal-text text-darken-1">A La Carte</a></li>
-					<li class="tab col s3"><a href="#test1" class = "teal-text text-darken-1">Take Away</a></li>
-					<li class="tab col s3"><a href="#test2" class = "teal-text text-darken-1">Pizza</a></li>
-				  </ul>
-				</div>
+		<div class = "teal margin-top-5">
+			<div class = "container">
+				<h3 class = "white-text center"> Our Amenities </h3>
 				
-				<!-- A La Carte Menu Items / Section -->
-				<div id="test3">
-					
-					<!-- Starters Section Heading -->
-					<div class = "row">
-						<div class = "col s12 teal darken-1 menu_heading">
-							<p class = "center white-text text_padding"> STARTERS </p>
+				<div class = "row" id = "icon_row">
+					<div class = "col s6 m3 l3">
+						<div class = "icon_container">
+							<i class = "small material-icons white-text about_icon"> restaurant </i>
 						</div>
+						<p class = "center white-text"> Beer Garden </p>
 					</div>
 					
-					<!-- Starters Food Options -->
-					<div class = "row add_border">
-						<div class = "col s12 m6 l4">
-							<p class = "bold blue-grey-text text-darken-3 food_names"> Soup Of The Day <span class = "right bold"> €4.95 </span> </p>
-							<p class = "blue-grey-text text-darken-2 description"> homemade soups served with our country farmhouse bread </p>
+					<div class = "col s6 m3 l3">
+						<div class = "icon_container">
+							<i class = "small material-icons white-text about_icon"> local_parking </i>
 						</div>
-						<div class = "col s12 m6 l4">
-							<p class = "bold blue-grey-text text-darken-3 food_names"> Chicken Wings <span class = "right bold"> €6.95 </span> </p>
-							<p class = "blue-grey-text text-darken-2 description"> either spicy buttered louisiana or honey BBQ, with celery & blue cheese garlic mayo </p>
-						</div>
-						<div class = "col s12 m6 l4">
-							<p class = "bold blue-grey-text text-darken-3 food_names"> Double Crumbed French Brie <span class = "right bold"> €6.95 </span> </p>
-							<p class = "blue-grey-text text-darken-2 description"> with red pepper and tomato salad, wholegrain and plum dressing  </p>
-						</div>						
-						<div class = "col s12 m6 l4">
-							<p class = "bold blue-grey-text text-darken-3 food_names"> Marinated Shelled King <span class = "right bold"> €7.95 </span> <br> Prawn Salad </p>
-							<p class = "blue-grey-text text-darken-2 description"> with soy, sesame seed and chilli dressing  </p>
-						</div>
-						<div class = "col s12 m6 l4">
-							<p class = "bold blue-grey-text text-darken-3 food_names"> Homemade Potted Chicken <span class = "right bold"> €6.95 </span> <br> Liver Pate</p>
-							<p class = "blue-grey-text text-darken-2 description"> with crusty toast and cranberry jam  </p>
-						</div>
-						<div class = "col s12 m6 l4">
-							<p class = "bold blue-grey-text text-darken-3 food_names"> Chicken Ceasar Salad <span class = "right bold"> €6.95 </span></p>
-							<p class = "blue-grey-text text-darken-2 description"> with garlic ciabatta croutons, smokey bacon and parmesan cheese </p>
-						</div>
-						<div class = "col s12 m6 l4">
-							<p class = "bold blue-grey-text text-darken-3 food_names"> Boston Prawn Salad <span class = "right bold"> €7.95 </span></p>
-							<p class = "blue-grey-text text-darken-2 description"> with marie rose sauce, cripsy cos lettuce and lemon wedge </p>
-						</div>
-						<div class = "col s12 m6 l4">
-							<p class = "bold blue-grey-text text-darken-3 food_names"> Garlic Mushrooms <span class = "right bold"> €6.95 </span></p>
-							<p class = "blue-grey-text text-darken-2 description"> breaded button mushrooms, golden fried and served with garlic mayo dip </p>
-						</div>
-						<div class = "col s12 m6 l4">
-							<p class = "bold blue-grey-text text-darken-3 food_names"> Egg & Black Pudding Salad <span class = "right bold"> €6.95 </span></p>
-							<p class = "blue-grey-text text-darken-2 description"> with smoked bacon, french herb vinaigrette and cripsy croutons </p>
-						</div>
-						<div class = "col s12 m6 l4">
-							<p class = "bold blue-grey-text text-darken-3 food_names padding_fix"> Toasted Garlic and Cheese <span class = "right bold"> €3.95 </span> <br> Ciabatta </p>
-						</div>
+						<p class = "center white-text"> Parking Area </p>
 					</div>
 					
-					
-					<!-- Burgers and Steaks Section Heading -->
-					<div class = "left-aligned">
-						<div class = "row teal darken-1">
-							<p class = "white-text center text_padding extra_padding_med"> STEAKS AND BURGERS </p>
+					<div class = "col s6 m3 l3">
+						<div class = "icon_container">
+							<i class = "small material-icons white-text about_icon"> directions_bike </i>
 						</div>
-						
-						<div class = "row add_border">
-							<div class = "col s12 m12 l6">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Grilled Bacon Steak <span class = "right bold"> €13.95 </span> </p>
-								<p class = "blue-grey-text text-darken-2 description"> topped with soft fried egg, creamy mashed potato and parsley sauce  </p>
-							</div>
-							<div class = "col s12 m12 l6">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Aged Ribeye Steak <span class = "right bold"> €18.95 </span> </p>
-								<p class = "blue-grey-text text-darken-2 description"> cooked to your liking on a stack of chilli and garlic homemade chips </p>
-							</div>
-							<div class = "col s12 m12 l6">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Prime Irish 10oz Sirloin <span class = "right bold"> €22.95 </span> </p>
-								<p class = "blue-grey-text text-darken-2 description"> with sauteed onions and mushrooms, creamy pepper sauce and homemade chips  </p>
-							</div>						
-							<div class = "col s12 m12 l6">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Lady Steak <span class = "right bold"> €14.95 </span></p>
-								<p class = "blue-grey-text text-darken-2 description"> minute steak cooked to your liking with sauteed onions and mushrooms, creamy pepper sauce and homemade chips  </p>
-							</div>
-							<div class = "col s12 m12 l6">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Prime Irish Beef Burger <span class = "right bold"> €14.95 </span> </p>
-								<p class = "blue-grey-text text-darken-2 description"> with cheese, bacon, lettuce, tomato, creamy pepper sauce and homemade chips  </p>
-							</div>
-							<div class = "col s12 m12 l6">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Steak & Onion Ciabatta <span class = "right bold"> €15.95 </span></p>
-								<p class = "blue-grey-text text-darken-2 description"> charred minute steak with sauteed onions, optional fried egg, creamy pepper sauce and homemade chips </p>
-							</div>
-							<div class = "col s12 m12 l6">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Honey BBQ Beef & Bacon <span class = "right bold"> €14.95 </span> <br> Burger </p>
-								<p class = "blue-grey-text text-darken-2 description"> with crispy onion stack, cajun mayo and homemade chips  </p>
-							</div>
-							<div class = "col s12 m12 l6">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Vegetarian Burger <span class = "right bold"> €12.95 </span></p>
-								<p class = "blue-grey-text text-darken-2 description"> crumbed vegetable burger with cheese, served with ballymaloe relish and homemade chips  </p>
-							</div>
-							<div class = "col s12 m12 l6">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Louisiana Southern Fried <span class = "right bold"> €14.95 </span> <br> Chicken Burger </p>
-								<p class = "blue-grey-text text-darken-2 description padding_fix_med"> on a toasted brioche bun with melted cheese, lettuce and tomato, louisiana sauce and garlic mayo served with homemade chips </p>
-							</div>
-							<div class = "col s12 m12 l6 right-align">
-								<img src = "images/burger_icon.png" alt = "Image of a burger icon" class = "hide-on-med-and-down" id = "burger"/>
-							</div>
-						</div>
+						<p class = "center white-text"> Bike Stop Zone </p>
 					</div>
 					
-					
-					
-					
-					<!-- Mains Section Heading -->
-					<div id = "mains">
-						<div class = "row teal darken-1">
-							<P class = "white-text center text_padding extra_padding"> MAINS </P>
+					<div class = "col s6 m3	l3">
+						<div class = "icon_container">
+							<i class = "small material-icons white-text about_icon"> music_note </i>
 						</div>
-						<div class = "row add_border">
-							<div class = "col s12">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Our Famous Cajun Combo <span class = "right bold"> €15.95 </span> </p>
-								<p class = "blue-grey-text text-darken-2 description"> succulent cajun breast of chicken & half rack of slow cooked honey BBQ ribs served with cajun mayo and homemade chips </p>
-							</div>
-							<div class = "col s12">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Mexican Chicken Fajita <span class = "right bold"> €15.95 </span> </p>
-								<p class = "blue-grey-text text-darken-2 description"> crispy salt and chilli chicken, onions and peppers served with flour tortillas, dip selection and tomato salsa  </p>
-							</div>
-							<div class = "col s12">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Daily Roast Joints <span class = "right bold"> €13.95 </span> </p>
-								<p class = "blue-grey-text text-darken-2 description"> Prime Irish roast beef <br> Oven roast breast of chicken with stuffing wrapped in bacon <br> Roast crown of turkey and baked ham with herb and onion stuffing </p>
-							</div>						
-							<div class = "col s12">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Homemade Baked Lasagne <span class = "right bold"> €13.95 </span></p>
-								<p class = "blue-grey-text text-darken-2 description"> served with home cut chips and coleslaw  </p>
-							</div>
-							<div class = "col s12">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Chicken Wings <span class = "right bold"> €14.95 </span> </p>
-								<p class = "blue-grey-text text-darken-2 description"> choice of spicy buttered louisiana or honey BBQ, with celery and blue cheese garlic mayo   </p>
-							</div>
-							<div class = "col s12">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Crispy Chicken Stir Fry <span class = "right bold"> €14.95 </span></p>
-								<p class = "blue-grey-text text-darken-2 description"> sesame seed, soy, chilli egg noodle stir fry finished with tomato and baby spinach  </p>
-							</div>
-							<div class = "col s12">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Chicken Curry <span class = "right bold"> €13.95 </span></p>
-								<p class = "blue-grey-text text-darken-2 description"> our mild chicken and stir fried vegetable curry served with savoury rice   </p>
-							</div>
-							<div class = "col s12">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Chicken Pasta <span class = "right bold"> €13.95 </span></p>
-								<p class = "blue-grey-text text-darken-2 description"> chicken and smoky spanish chorizo penne pasta with roast tomato, baby spinach, garlic and shavings of parmesan   </p>
-							</div>
-							<div class = "col s12">
-								<p class = "bold blue-grey-text text-darken-3 food_names padding_fix_large"> Vegetarian Penne Pasta <span class = "right bold"> €11.95 </span></p>
-								<p class = "blue-grey-text text-darken-2 description"> slow roasted tomatoes with garlic, sauteed veg and baby spinach finished with shavings of parmesan cheese </p>
-							</div>
-							
-						</div>
+						<p class = "center white-text"> Live Music </p>
 					</div>
 					
-					<!-- Fish Menu Section -->
-					<div class = "left-aligned" id = "fish">
-						<div class = "row teal darken-1">
-							<p class = "white-text center text_padding extra_padding"> FISH </p>
+					<div class = "col s6 m3	l3">
+						<div class = "icon_container">
+							<i class = "small material-icons white-text about_icon"> home </i>
 						</div>
-						<div class = "row add_border">
-							<div class = "col s12">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Battered Fresh Cod <span class = "right bold"> €13.95 </span></p>
-								<p class = "blue-grey-text text-darken-2 description"> served with home cut chips, garden peas and homemade tartare sauce </p>
-							</div>
-							<div class = "col s12">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Grilled Salmon Stir Fry <span class = "right bold"> €16.95 </span></p>
-								<p class = "blue-grey-text text-darken-2 description"> sesame seed, soy and egg noodle stir fry with garlic, chilli and baby spinach </p>
-							</div>
-							<div class = "col s12">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Grilled Salmon & King Prawns <span class = "right bold"> €18.95 		</span></p>
-								<p class = "blue-grey-text text-darken-2 description padding_fix"> grilled fillet of salmon and king prawns with creamy Kenmare whiskey sauce, wilted spinach, creamy mashed potato and panache of vegetables    </p>
-							</div>
-						</div>
+						<p class = "center white-text"> Home Catering </p>
 					</div>
 					
-					<!-- Salad menu Section -->
-					<div class = "left-aligned" id = "salad">
-						<div class = "row teal darken-1">
-							<p class = "white-text center text_padding extra_padding"> SALADS </p>
+					<div class = "col s6 m3	l3">
+						<div class = "icon_container">
+							<i class = "small material-icons white-text about_icon"> accessible </i>
 						</div>
-						<div class = "row add_border">
-							<div class = "col s12">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Chicken Caesar Salad <span class = "right bold"> €11.95 </span></p>
-								<p class = "blue-grey-text text-darken-2 description"> with garlic ciabatta croutons, smokey  bacon and parmesan cheese </p>
-							</div>
-							<div class = "col s12">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Goats Cheese Salad <span class = "right bold"> €10.95 </span></p>
-								<p class = "blue-grey-text text-darken-2 description"> dressed salad of semi sundried tomatoes, red onions, olives and Dijon dressing </p>
-							</div>
-							<div class = "col s12">
-								<p class = "bold blue-grey-text text-darken-3 food_names"> Summer Salad of Egg and <span class = "right bold"> €10.95 </span> <br> Black Pudding </p>
-								<p class = "blue-grey-text text-darken-2 description padding_fix_med_salad"> dressed salad with smoked bacon and crsipy croutons in a french herb vinaigrette  </p>
-							</div>
-						</div>
+						<p class = "center white-text"> Wheelchair Accessible </p>
 					</div>
 					
-					<!-- Light Snacks Sections -->
-					<div class = "row">
-						<div class = "col s12 teal darken-1 menu_heading">
-							<p class = "center white-text text_padding"> LIGHT SNACKS </p>
+					<div class = "col s6 m3	l3">
+						<div class = "icon_container">
+							<i class = "small material-icons white-text about_icon"> events </i>
 						</div>
+						<p class = "center white-text"> Party Venue </p>
 					</div>
 					
-					<div class = "row add_border">
-						<div class = "col s12 m6 l4">
-							<p class = "bold blue-grey-text text-darken-3 food_names"> Hot Roast Beef Sandwich <span class = "right bold"> €8.95 </span> </p>
-							<p class = "blue-grey-text text-darken-2 description"> roast beef sandwich served with chips and coleslaw </p>
+					<div class = "col s6 m3	l3">
+						<div class = "icon_container">
+							<i class = "small material-icons white-text about_icon"> child_friendly </i>
 						</div>
-						<div class = "col s12 m6 l4">
-							<p class = "bold blue-grey-text text-darken-3 food_names"> Fresh Filled Sandwich <span class = "right bold"> €6.95 </span> </p>
-							<p class = "blue-grey-text text-darken-2 description"> sandwich with fillings of your choice served with chips </p>
-						</div>
-						<div class = "col s12 m6 l4">
-							<p class = "bold blue-grey-text text-darken-3 food_names"> Soup and Sandwich <span class = "right bold"> €8.95 </span> </p>
-							<p class = "blue-grey-text text-darken-2 description"> sandwich of your choice with one of our soups of the day   </p>
-						</div>						
-						<div class = "col s12 m6 l4">
-							<p class = "bold blue-grey-text text-darken-3 food_names"> Chicken Caesar Wrap <span class = "right bold"> €9.95 </span></p>
-							<p class = "blue-grey-text text-darken-2 description"> crispy cos lettuce, smokey bacon and parmesan cheese, served with homemade chips   </p>
-						</div>
-						<div class = "col s12 m6 l4">
-							<p class = "bold blue-grey-text text-darken-3 food_names"> Salt & Chilli Chicken Wrap <span class = "right bold"> €10.95 </span></p>
-							<p class = "blue-grey-text text-darken-2 description"> with cheese, salad and cajun mayo,      served with chips </p>
-						</div>
-						<div class = "col s12 m6 l4">
-							<p class = "bold blue-grey-text text-darken-3 food_names"> Mixed Basket <span class = "right bold"> €8.95 </span></p>
-							<p class = "blue-grey-text text-darken-2 description"> chicken goujons and cocktail sausages  with home cut chips </p>
-						</div>
+						<p class = "center white-text margin-bottom-15"> Child Friendly </p>
 					</div>
 				</div>
-				
-				
-				
-				<div id="test1" class="col s12">Test 2</div>
-				<div id="test2" class="col s12">Test 3</div>
 			</div>
 		</div>
+		
 		
 				  
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

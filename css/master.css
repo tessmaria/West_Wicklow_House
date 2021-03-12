@@ -2,6 +2,10 @@ body {
 	background-color: #f2efe1;
 }
 
+p {
+	line-height: 120%;
+}
+
 .underline {
 	text-decoration: underline;
 }
@@ -15,27 +19,55 @@ body {
 	padding-bottom: 1.5%;
 }
 
-p {
-	line-height: 120%;
+.fill_width {
+	width: 100%;
 }
 
-/* CSS for the navbar and intro / header sections */
+.fill_height {
+	height: 100%;
+}
+
+.add_grey_border {
+	border: solid 2px #494b4a;
+}
+
+.add_teal_border {
+	border: 2px solid #009688;
+}
+
+.menu_header_text {
+	font-family: 'Bradley Hand ITC';
+	font-size: 500%;
+	text-decoration: none;
+	margin: auto;
+}
+
+/* Different margin sizes in classes */ 
+
+.margin-top-5 { margin-top: 5%;} .margin-top-3 {margin-top: 3%;}
+
+.margin-bottom-5 {margin-bottom: 5%;} .margin-bottom-10 {margin-bottom: 10%;} .margin-bottom-15 {margin-bottom: 15%;} 
+
+
+/* Resizing logos according to device size */
 
 #logo {
 	display: block;
-	margin: 0.5% auto 0.5% auto;
-	width: 12%;
+	margin: 1% auto;
+	width: 70%;
 }
 
 #logo_mobile {
-	width: 40%;
+	width: 50%;
 	margin-top: 4%;
 }
 
 #logo_tablet {
-	width: 50%;
+	width: 60%;
 	margin-top: 4%;
 }
+
+/* Navbar adjustments */
 
 .central {
 	display:flex; 
@@ -43,8 +75,7 @@ p {
 }
 
 nav {
-	border: 2px solid #009688;
-	margin-top: 0.5%;
+	margin: 1% 0 1.5% 0;
 }
 
 .nav-text {
@@ -52,17 +83,33 @@ nav {
 }
 
 li {
-	margin: 0 2% 0 2%;
+	margin: 0 1% 0 1%;
 }
 
-#banner {
+/* CSS for the About Us Banner */
+
+#about_banner {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cover_photo.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+#about_insert {
+	width: 40%;
+	margin: auto;
+}
+
+#about_overlay {
+	display: block;
+	margin: auto;
 	width: 100%;
-	margin-top: 0.5%;
 }
 
-/* CSS for the About Us Section */
+/* Text Within the About Section */
+
 .about_text {
-	text-align: center;
+	text-align: left;
 	font-size: 120%;
 	margin-bottom: 2%;
 	line-height: 130%;
@@ -70,8 +117,16 @@ li {
 
 .food_time_info {
 	text-align: center;
-	font-size: 110%;
 	font-weight: bold;
+	font-size: 110%;
+	line-height: 150%;
+}
+
+.knife, .fork {
+	display: block;
+	margin: 3% auto 0 auto;
+	padding: 0 4% 0 4%;
+	height: 100%;
 }
 
 #icon_row {
@@ -92,14 +147,10 @@ li {
 /* CSS for the food menus sections */
 
 #menu_header {
-	background-image: url(../images/menu_section.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/menu_section.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 200px;
-}
-
-#menu_header_text {
-	margin: auto;
+	height: 300px;
 }
 
 #menu_nav {
@@ -111,15 +162,7 @@ li {
 	background-color: #009688 !important;
 }
 .tabs .tab a.active {
-    background-color:#cae1db !important;
-}
-
-.menu_heading {
-	margin-top: 2%;
-}
-
-.add_border {
-	border: 2px solid #009688;
+    background-color:#f2efe1 !important;
 }
 
 .food_names {
@@ -128,93 +171,101 @@ li {
 }
 
 .description {
-	padding-bottom: 4%;
+	padding-bottom: 2%;
 }
 
-.left-aligned {
-	width: 66%;
-	float: left;
-	margin-top: 3%;
-}
-
-#mains {
+#food_pic_1 {
 	width: 33%;
+	float: left;
+}
+
+#steaks {
+	width: 66%;
 	float: right;
-	margin-top: 3%;
+}
+
+#burger_icon, #salad_icon {
+	margin: 3% 15% 0 0;
 }
 
 #fish {
-	width: 32%;
+	width: 33%;
+	float: left;
 }
 
-#salad {
-	width: 32%;
-	margin-left: 2%;
+#salads {
+	width: 33%;
+	float: left;
+	margin-left: 1.5%;
 }
 
-#burger {
-	margin-right: 10%;
+#salad_text, #fish_text {
+	padding-top: 4%;
+	padding-bottom: 4%; 
 }
 
-.padding_fix_large {
-	padding-bottom: 4%;
+#food_pic_2 {
+	width: 30%;
+	float: right;
 }
 
-.extra_padding {
-	padding: 3%;
-}
+/* Media Queries for Ipad Size */
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
-	.left-aligned {
-		width: 49%;
+	#about_banner {
+		height: 350px;
 	}
 	
-	#mains {
-		width: 49%;
+	h1 {
+		font-size: 3rem !important;
 	}
 	
-	#fish {
-		width: 49%;
+	h2 {
+		font-size: 2.5rem !important;
+		margin: 4% 0 4% 0 !important;
 	}
 	
-	#salad {
-		width: 49%;
+	h3 {
+		font-size: 2.2rem !important; 
 	}
 	
-	.padding_fix_med {
-	padding-bottom: 12%;
+	.fork, .knife {
+		padding: 0;
+		margin-top: 8%;
 	}
 	
-	.extra_padding_med {
-		padding: 3%;
+	#steaks {
+		width: 70%;
 	}
 	
-	.padding_fix_med_salad {
-		padding-bottom: 10%;
+	#food_pic_1 {
+		width: 29%;
 	}
+	
 }
 
+/* Media Queries for Mobile Size */
+
 @media only screen and (max-width: 600px) {
-	#menu_header {
-		height: 150px;
+	#about_banner {
+		height: 250px;
 	}
 	
-  .left-aligned {
-	  width: 100%;
-	  margin-top: 3%;
-  }
-  
-  #mains {
-	  width: 100%;
-  }
-  
-  #fish {
-	  width: 100%;
-  }
-  
-  #salad {
-	  width: 100%;
-	  margin-left: 0%;
-  }
+	#about_insert {
+		width: 80%;
+	}
+	
+	.fork, .knife {
+		margin-top: 4%;
+		margin-bottom: 4%;
+	}
+	
+	#steaks, #fish, #salads {
+		width: 100%;
+	}
+	
+	#burger_icon, #fish_icon, #salad_icon {
+		width: 0px;
+	}
   
 }

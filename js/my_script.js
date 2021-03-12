@@ -13,6 +13,6 @@ $(document).ready(function(){
   
  
  /* Code to initialise parallax on header image */
- $(document).ready(function(){
+$(document).ready(function(){
     $('.parallax').parallax();
   });
