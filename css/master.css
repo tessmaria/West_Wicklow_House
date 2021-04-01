@@ -14,6 +14,10 @@ p {
 	font-weight: bold;
 }
 
+.small {
+	font-size: 80%;
+}
+
 .text_padding {
 	padding-top: 1.5%;
 	padding-bottom: 1.5%;
@@ -27,6 +31,11 @@ p {
 	height: 100%;
 }
 
+.buttons {
+	width: 30%;
+	margin: 2% auto 2% auto;
+}
+
 .add_grey_border {
 	border: solid 2px #494b4a;
 }
@@ -35,7 +44,7 @@ p {
 	border: 2px solid #009688;
 }
 
-.menu_header_text {
+.header_text {
 	font-family: 'Bradley Hand ITC';
 	font-size: 500%;
 	text-decoration: none;
@@ -44,7 +53,7 @@ p {
 
 /* Different margin sizes in classes */ 
 
-.margin-top-5 { margin-top: 5%;} .margin-top-3 {margin-top: 3%;}
+.margin-top-1 {margin-top: 1%;} .margin-top-3 {margin-top: 3%; } .margin-top-5 { margin-top: 5%;}
 
 .margin-bottom-5 {margin-bottom: 5%;} .margin-bottom-10 {margin-bottom: 10%;} .margin-bottom-15 {margin-bottom: 15%;} 
 
@@ -174,39 +183,49 @@ li {
 	padding-bottom: 2%;
 }
 
-#food_pic_1 {
-	width: 33%;
+#burger_photo {
+	width: 39%;
+	float: left;
+}
+
+#sides_photo {
+	width: 25%;
+	float: right;
+}
+
+#pizza_photo {
+	width: 47%;
 	float: left;
 }
 
 #steaks {
-	width: 66%;
+	width: 59%;
 	float: right;
 }
 
-#burger_icon, #salad_icon {
-	margin: 3% 15% 0 0;
-}
-
 #fish {
-	width: 33%;
+	width: 36%;
 	float: left;
 }
 
 #salads {
-	width: 33%;
+	width: 36%;
 	float: left;
 	margin-left: 1.5%;
 }
 
-#salad_text, #fish_text {
+#pizzas {
+	width: 51%;
+	float: right;
+}
+
+#salad_text, #fish_text, #steak_text {
 	padding-top: 4%;
 	padding-bottom: 4%; 
 }
 
-#food_pic_2 {
-	width: 30%;
-	float: right;
+#burger_icon {
+	margin: 3% 15% 0 0;
 }
 
 /* Media Queries for Ipad Size */
@@ -216,17 +235,17 @@ li {
 		height: 350px;
 	}
 	
+	#menu_header {
+		height: 200px;
+	}
+
 	h1 {
 		font-size: 3rem !important;
 	}
 	
-	h2 {
-		font-size: 2.5rem !important;
-		margin: 4% 0 4% 0 !important;
-	}
-	
 	h3 {
-		font-size: 2.2rem !important; 
+		font-size: 2.2rem !important;
+		margin: 4% 0 4% 0 !important;
 	}
 	
 	.fork, .knife {
@@ -235,11 +254,24 @@ li {
 	}
 	
 	#steaks {
-		width: 70%;
+		width: 100%;
 	}
 	
-	#food_pic_1 {
-		width: 29%;
+	#fish {
+		width: 49%;
+	}
+	
+	#salads {
+		width: 49%;
+		float: right;
+	}
+	
+	#pizza_photo {
+		width: 55%;
+	}
+	
+	#pizzas {
+		width: 43%;
 	}
 	
 }
@@ -251,8 +283,16 @@ li {
 		height: 250px;
 	}
 	
+	#menu_header {
+		height: 180px;
+	}
+	
 	#about_insert {
 		width: 80%;
+	}
+	
+	.header_text {
+		font-size: 400%;
 	}
 	
 	.fork, .knife {
@@ -260,12 +300,8 @@ li {
 		margin-bottom: 4%;
 	}
 	
-	#steaks, #fish, #salads {
+	#steaks, #fish, #salads, #pizzas {
 		width: 100%;
-	}
-	
-	#burger_icon, #fish_icon, #salad_icon {
-		width: 0px;
 	}
   
 }
