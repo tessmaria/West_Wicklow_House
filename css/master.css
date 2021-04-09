@@ -57,7 +57,7 @@ p {
 
 /* Different margin sizes in classes */ 
 
-.margin-top-1 {margin-top: 1%;} .margin-top-3 {margin-top: 3%; } .margin-top-5 { margin-top: 5%;} .margin-top-10 { margin-top: 10%;}
+.margin-top-1 {margin-top: 1%;} .margin-top-2 {margin-top: 2%;} .margin-top-3 {margin-top: 3%; } .margin-top-5 { margin-top: 5%;} .margin-top-10 { margin-top: 10%;}
 
 .margin-bottom-3 {margin-bottom: 3%;} .margin-bottom-5 {margin-bottom: 5%;} .margin-bottom-10 {margin-bottom: 10%;} .margin-bottom-15 {margin-bottom: 15%;} 
 
@@ -156,6 +156,10 @@ li {
 	margin: 15% auto 0 auto;
 }
 
+.social_icon {
+	margin-right: 3%;
+}
+
 
 /* CSS for the food menus sections */
 
@@ -188,7 +192,7 @@ li {
 }
 
 #burger_photo {
-	width: 39%;
+	width: 42%;
 	float: left;
 }
 
@@ -203,7 +207,7 @@ li {
 }
 
 #steaks {
-	width: 59%;
+	width: 57%;
 	float: right;
 }
 
@@ -232,6 +236,33 @@ li {
 	margin: 3% 15% 0 0;
 }
 
+/* CSS for Gallery Section */
+
+#gallery_header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/gallery_banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+}
+
+/* CSS for Events Section */
+
+#events_header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/events_banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+}
+
+/* CSS for Reviews Section */
+
+#reviews_header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/reviews_banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+}
+
 
 /* CSS for Contact Section */
 
@@ -250,7 +281,7 @@ li {
 		height: 350px;
 	}
 	
-	#menu_header, #contact_header {
+	#menu_header, #contact_header, #events_header, #reviews_header, #gallery_header {
 		height: 200px;
 	}
 
@@ -302,7 +333,7 @@ li {
 		height: 250px;
 	}
 	
-	#menu_header, #contact_header {
+	#menu_header, #contact_header, #events_header, #reviews_header, #gallery_header {
 		height: 180px;
 	}
 	
